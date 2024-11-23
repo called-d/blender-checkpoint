@@ -41,6 +41,7 @@ def multiline_label(context, text, parent, icon="NONE"):
 
 
 def get_paths(filepath):
+    import bpy
     _name = bpy.path.basename(bpy.context.blend_data.filepath).replace(".blend", "")
     _root_folder_path = os.path.join(
         filepath, _name, PATHS_KEYS.ROOT_FOLDER)
