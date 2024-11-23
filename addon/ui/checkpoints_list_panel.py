@@ -15,7 +15,7 @@ class SubPanelCheckpointsList(utils.CheckpointsPanelMixin, bpy.types.Panel):
     bl_idname = "CHECKPOINT_PT_checkpoints_list"
     bl_parent_id = ui.MainPanel.bl_idname
     bl_label = ""
-    bl_options = {"DEFAULT_CLOSED"}
+    bl_options = {}
 
     @classmethod
     def poll(cls, context):
