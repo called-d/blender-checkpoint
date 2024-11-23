@@ -40,7 +40,7 @@ def export_checkpoint(filepath, checkpoint_id, description):
     # create folder "exported"
     export_path = os.path.join(filepath, "exported")
     if not os.path.exists(export_path):
-        os.mkdirs(export_path, exist_ok=True)
+        os.makedirs(export_path, exist_ok=True)
 
     export_name = os.path.join(export_path, f"{description}.blend")
     shutil.copy(checkpoint, export_name)
