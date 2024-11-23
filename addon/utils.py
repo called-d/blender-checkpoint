@@ -28,7 +28,7 @@ TIMELINES_DEFAULT_POLYFILL_2_83 = None if (2, 84, 0) > bpy.app.version else -1
 class CheckpointsPanelMixin:
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
-    bl_category = "Tool"
+    bl_category = "CP"
 
 
 addon_name = __name__.partition(".")[0]
