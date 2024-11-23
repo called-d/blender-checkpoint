@@ -46,16 +46,16 @@ def initialize_version_control(filepath, filename):
 
     # generate folder structure
     if not os.path.exists(_root):
-        os.mkdirs(_root, exist_ok=True)
+        os.makedirs(_root, exist_ok=True)
 
     if not os.path.exists(_timelines):
-        os.mkdirs(_timelines, exist_ok=True)
+        os.makedirs(_timelines, exist_ok=True)
 
     if not os.path.exists(_saves):
-        os.mkdirs(_saves, exist_ok=True)
+        os.makedirs(_saves, exist_ok=True)
 
     if not os.path.exists(_objects):
-        os.mkdirs(_objects, exist_ok=True)
+        os.makedirs(_objects, exist_ok=True)
 
     _original_tl_path = os.path.join(_timelines, config.PATHS_KEYS.ORIGINAL_TL_FILE)
     if not os.path.exists(_original_tl_path):
