@@ -38,7 +38,9 @@ def export_checkpoint(filepath, checkpoint_id, description):
     )
 
     # create folder "exported"
-    export_path = os.path.join(filepath, "exported")
+    import bpy
+    _name = bpy.path.basename(bpy.context.blend_data.filepath).replace(".blend", "")
+    export_path = os.path.join(filepath, _name, "exported")
     if not os.path.exists(export_path):
         os.makedirs(export_path, exist_ok=True)
 
